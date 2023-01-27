@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class FileExampleTests{
-    File start = new File("c:/some-files/");
+    File start = new File("some-files");
     File one = new File("some-files/a.txt");
     File two = new File("some-files/more-files/b.txt");
     File three = new File("some-files/more-files/c.java");
