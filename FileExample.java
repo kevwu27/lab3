@@ -36,18 +36,23 @@ public class FileExample {
 
   See the File documentation here: https://docs.oracle.com/javase/8/docs/api/java/io/File.html
 
+  , two, three, four, five
+
+  "c:\\data"
+
   */
 
 	static List<File> getFiles(File start) throws IOException {
-	  File f = start;
+	  File f = new File("c:\\some-files/");
 	  List<File> result = new ArrayList<>();
-	  result.add(start);
+	  //result.add(start);
 	  if(f.isDirectory()) {
 	    File[] paths = f.listFiles();
 	    for(File subFile: paths) {
 	      result.add(subFile);
 	    }
 	  }
+
 	  return result;
 	}
 }
